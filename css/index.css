@@ -1,0 +1,201 @@
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+    background: #cccccc;
+}
+
+.main {
+    display:block;
+    max-width:100% !important;
+    width: 90%;
+    margin: auto;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1; /* Remove this line if it's not going to be a background! */
+    padding: 25px 0 25px 15px;
+}
+
+.list, .bought{
+    background-color: white;
+    position:absolute;
+    top:20%;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-shadow: 1px 1px 1px 1px #979797;
+    display: inline-block;
+    box-sizing:	border-box;
+
+    height: auto;
+    vertical-align: top;
+}
+
+.list {
+    width:55% !important;
+}
+
+.add{
+    padding: 10px;
+}
+
+.add input, .button {
+    width: 80%;
+    height: 30px;
+    float: left;
+    box-sizing:	border-box;
+    vertical-align: top;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+}
+
+.add input {
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.button {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: 0px;
+    font-size: 23px;
+    width: 20%;
+    background: rgba(45, 46, 194, 0.93);
+}
+
+.button:hover {
+    background: rgba(59, 102, 194, 0.93);
+    cursor: pointer;
+}
+
+.bought {
+    width: 40% !important;
+    margin-left: 25px;
+    left: 56%;
+}
+
+.good{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #cccccc;
+    display: inline-block;
+}
+
+.good-title, .plus-minus, .bought-delete{
+    width: 33%;
+    min-height: 30px;
+    height: auto;
+    float: left;
+    line-height: 30px;
+}
+
+.plus-minus{
+    text-align: center;
+}
+
+.bought-delete{
+    text-align: right;
+}
+
+.count{
+    padding: 5px;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.button-minus, .button-plus{
+    margin: 0 5px 0 5px;
+    border: 0;
+    width: 30px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 30px;
+    color: white;
+}
+
+.button-minus{
+     background-color: salmon;
+ }
+
+.button-minus:hover{
+    background-color: lightsalmon;
+}
+
+.button-plus{
+    background-color: seagreen;
+}
+
+.button-plus:hover{
+    background-color: mediumseagreen;
+}
+
+.button-bought{
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #cccccc;
+    width: auto;
+}
+
+.button-bought:hover{
+    background-color: #cccccc;
+}
+
+.button-delete{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid crimson;
+    background-color: firebrick;
+    color: white;
+}
+
+.button-delete:hover{
+    background-color: crimson;
+}
+
+.bought-section{
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+}
+
+.remains{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.not-bought{
+    box-sizing: border-box;
+}
+
+.good-not-bought{
+    display: inline-block;
+    padding: 5px;
+    width: auto;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.good-not-bought-title{
+    font-size: small;
+}
+
+.good-not-bought-count{
+    width: auto;
+    height: 10px;
+    padding: 0 5px 5px 5px;
+    background-color: orangered;
+    border-radius: 30px;
+    color: white;
+}
