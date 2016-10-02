@@ -195,19 +195,77 @@ span {
     background-color: lightsalmon;
 }
 
+.button-minus::after {
+    background: blueviolet;
+    border-radius: 8px 8px 8px 0;
+    color: white;
+    content: attr(data-title);
+    margin-top: -24px;
+    opacity: 0;
+    padding: 3px 7px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-minus:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .button-plus{
     background-color: seagreen;
 }
 
-.button-plus:hover{
-    background-color: mediumseagreen;
+.button-plus:hover {
+    background: mediumseagreen;
 }
+
+.button-plus::after {
+    background: blueviolet;
+    border-radius: 8px 8px 8px 0;
+    color: white;
+    content: attr(data-title);
+    margin-top: -24px;
+    opacity: 0;
+    padding: 3px 7px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-plus:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
 
 .button-bought{
     border-radius: 5px;
     padding: 5px 20px 5px 20px;
     border: 1px solid #cccccc;
     width: auto;
+}
+
+.button-bought::after {
+    background: blueviolet;
+    border-radius: 8px 8px 8px 0;
+    color: white;
+    content: attr(data-title);
+    margin-top: -24px;
+    opacity: 0;
+    padding: 3px 7px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-bought:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .button-not-bought{
@@ -226,6 +284,24 @@ span {
     background-color: #cccccc;
 }
 
+.button-not-bought::after {
+    background: blueviolet;
+    border-radius: 8px 8px 8px 0;
+    color: white;
+    content: attr(data-title);
+    margin-top: -24px;
+    opacity: 0;
+    padding: 3px 7px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-not-bought:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .button-delete{
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
@@ -236,6 +312,24 @@ span {
 
 .button-delete:hover{
     background-color: crimson;
+}
+
+.button-delete::after {
+    background: blueviolet;
+    border-radius: 8px 8px 8px 0;
+    color: white;
+    content: attr(data-title);
+    margin-top: -24px;
+    opacity: 0;
+    padding: 3px 7px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-delete:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .bought-section{

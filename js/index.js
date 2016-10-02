@@ -158,17 +158,23 @@ $(function () {
     });
 
     $(document).on('click', '.button', function() {
+
         var title = $(".add input").val();
-        var $node	=	$($template.html());
-        $node.find(".good-title").find("span").text(title);
-        $node.appendTo(".list");
+        if(title != "") {
+            var $node = $($template.html());
+            $node.find(".good-title").find("span").text(title);
+            $node.appendTo(".list");
 
 
+            node2.css('margin-right', '5px');
+            node2.css('text-decoration', 'none');
+            node2.find(".good-not-bought-title").text(title);
+            node2.appendTo("#goods-not-bought");
 
-        node2.css('margin-right', '5px');
-        node2.css('text-decoration', 'none');
-        node2.find(".good-not-bought-title").text(title);
-        node2.appendTo("#goods-not-bought");
+            $(".add input").val('').focus();
+        }else{
+            alert("Can't add a good without title");
+        }
     });
 
     $(document).on('dblclick', '.good-title', function () {
