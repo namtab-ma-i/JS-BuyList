@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">	</script>
+    <script	type="text/javascript" src="js/index.js">	</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>BuyList</title>
 </head>
@@ -10,59 +13,58 @@
         <div class="list">
             <div class="add">
                 <input type="text" placeholder="Name">
-                <button class="button">Add</button>
+                <button class="button" data-title="Add new good">Add</button>
             </div>
+            <div class="good-template">
             <div class="good">
                 <div class="good-title">
-                        <span>
-                        Tomatoes
-                        </span>
+                        <span>Tomatoes</span>
                 </div>
                 <div class="plus-minus">
-                    <button class="button-minus">-</button>
+                    <button class="button-minus" data-title="Decrease">-</button>
                     <span class="count">1</span>
-                    <button class="button-plus">+</button>
+                    <button class="button-plus" data-title="Increase">+</button>
                 </div>
                 <div class="bought-delete">
                     <span>
-                        <button class="button-bought">Bought</button>
-                        <button class="button-delete">X</button>
+                        <button class="button-bought" data-title="Cross out">Bought</button>
+                        <button class="button-not-bought" data-title="Add again">Not bought</button>
+                        <button class="button-delete" data-title="Remove">X</button>
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="good">
+                <div class="good-title">
+                        <span>Cheese</span>
+                </div>
+                <div class="plus-minus">
+                    <button class="button-minus" data-title="Decrease">-</button>
+                    <span class="count">1</span>
+                    <button class="button-plus" data-title="Increase">+</button>
+                </div>
+                <div class="bought-delete">
+                    <span>
+                        <button class="button-bought" data-title="Cross out">Bought</button>
+                        <button class="button-not-bought" data-title="Add again">Not bought</button>
+                        <button class="button-delete" data-title="Remove">X</button>
                     </span>
                 </div>
             </div>
             <div class="good">
                 <div class="good-title">
-                        <span>
-                        Cheese
-                        </span>
+                        <span>Cookies</span>
                 </div>
                 <div class="plus-minus">
-                    <button class="button-minus">-</button>
+                    <button class="button-minus" data-title="Decrease">-</button>
                     <span class="count">1</span>
-                    <button class="button-plus">+</button>
+                    <button class="button-plus" data-title="Increase">+</button>
                 </div>
                 <div class="bought-delete">
                     <span>
-                        <button class="button-bought">Bought</button>
-                        <button class="button-delete">X</button>
-                    </span>
-                </div>
-            </div>
-            <div class="good">
-                <div class="good-title">
-                        <span>
-                        Cookies
-                        </span>
-                </div>
-                <div class="plus-minus">
-                    <button class="button-minus">-</button>
-                    <span class="count">1</span>
-                    <button class="button-plus">+</button>
-                </div>
-                <div class="bought-delete">
-                    <span>
-                        <button class="button-bought">Bought</button>
-                        <button class="button-delete">X</button>
+                        <button class="button-bought" data-title="Cross out">Bought</button>
+                        <button class="button-not-bought" data-title="Add again">Not bought</button>
+                        <button class="button-delete" data-title="Remove">X</button>
                     </span>
                 </div>
             </div>
@@ -73,11 +75,13 @@
                 <span class="remains">Remains</span>
             </div>
             <div class="bought-section">
-                <div class="not-bought">
+                <div id="goods-not-bought" class="not-bought">
+
                     <div class="good-not-bought">
                         <span class="good-not-bought-title">Tomatoes</span>
                         <span class="good-not-bought-count">1</span>
                     </div>
+
                     <div class="good-not-bought">
                         <span class="good-not-bought-title">Cheese</span>
                         <span class="good-not-bought-count">1</span>
@@ -91,8 +95,21 @@
             <div class="bought-section">
                 <span class="remains">Bought</span>
             </div>
-            <div class="bought-section"></div>
+            <div class="bought-section">
+                <div id="goods-bought">
+
+                </div>
+            </div>
+        </div>
+        <div class="badge">
+            <span id="light">Buy List<br></span>
+            <span style="font-weight: lighter">Created by:</span>
+            <span>Vera Chuiko</span>
         </div>
     </div>
+
+    <script>
+
+    </script>
 </body>
 </html>
